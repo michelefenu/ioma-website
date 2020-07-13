@@ -1,5 +1,5 @@
 # Redirect all subpages to root
 RewriteEngine on
 RewriteCond %{REQUEST_URI} !^/$
-RewriteCond %{REQUEST_URI} !\.(gif|jpe?g|png|css|js|php|ico)$
+RewriteCond %{REQUEST_URI} !\.(gif|jpe?g|png|css|js|php|ico|png|webmanifest)$
 RewriteRule .* / [L,R=301]
