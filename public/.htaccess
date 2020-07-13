@@ -1,1 +1,3 @@
-RewriteRule ^(.*)$ https://ioma.it/ [R=301,L]
+RewriteCond %{HTTP_HOST} ^ioma\.it [NC]
+RewriteCond %{REQUEST_URI} !^/$ [NC]
+RewriteRule ^.*$ https://ioma.it/ [301, L]
