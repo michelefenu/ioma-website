@@ -17,3 +17,4 @@ jobs:
         ftp-server: ftp://ftp.michelefenu.it/
         ftp-username: ioma@michelefenu.it
         ftp-password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: public/
