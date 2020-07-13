@@ -1,3 +1,5 @@
-RewriteCond %{HTTP_HOST} ^ioma\.it [NC]
-RewriteCond %{REQUEST_URI} !^/$ [NC]
-RewriteRule ^.*$ https://ioma.it/ [301, L]
+# Redirect all subpages to root
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^/$
+RewriteCond %{REQUEST_URI} !\.(gif|jpe?g|png|css|js|php|ico)$
+RewriteRule .* / [L,R=301]
